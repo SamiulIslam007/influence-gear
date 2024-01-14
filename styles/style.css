@@ -77,9 +77,27 @@ nav ul li a {
   font-weight: 600;
   margin: 16px 0;
 }
+/* Main styles */
+main {
+  max-width: 1040px;
+  margin: auto;
+  padding: 0 14px;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+.partner {
+  width: auto;
+  margin: auto;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 992px) {
+  /* header section */
   nav {
     flex-direction: column;
     text-align: center;
@@ -107,5 +125,10 @@ nav ul li a {
   .header-content button {
     width: auto;
     margin: auto;
+  }
+  /* Main styles */
+  /* partners section styles */
+  .partners {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
