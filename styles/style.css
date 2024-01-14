@@ -132,6 +132,18 @@ main {
   font-size: 1.3rem;
   font-weight: 400;
 }
+.see-more-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  align-items: center;
+  margin-top: 20px;
+}
+.see-more-btn a {
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: 700;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 992px) {
@@ -169,7 +181,7 @@ main {
   .partners {
     grid-template-columns: repeat(4, 1fr);
   }
-  /* Colleciton section */
+  /* collection section */
   .collection-card img {
     width: 100%;
   }
